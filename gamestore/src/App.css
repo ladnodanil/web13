@@ -1,0 +1,325 @@
+html,
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+a {
+  color: #4caf50;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #388e3c;
+  text-decoration: none;
+}
+
+.header {
+  background: #4caf50;
+  height: 70px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+ul.mainmenu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 70px;
+  color: #fff;
+  font-size: 18px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+ul.mainmenu li {
+  margin: 0 20px;
+  padding: 10px 0;
+}
+
+ul.mainmenu li.logo {
+  margin: 0;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+ul.mainmenu li.last {
+  margin-left: auto;
+}
+
+ul.mainmenu li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+ul.mainmenu li a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+  margin-top: 20px;
+}
+
+.left-chapters {
+  width: 250px;
+  min-width: 250px;
+  margin-right: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  height: fit-content;
+}
+
+.content {
+  flex: 1;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.left-chapters ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.left-chapters ul li {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.left-chapters ul li:hover {
+  background-color: #f5f5f5;
+}
+
+.left-chapters ul li a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+}
+
+.left-chapters ul li.selected {
+  background-color: #4caf50;
+}
+
+.left-chapters ul li.selected a {
+  color: #fff;
+}
+
+#catalog-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+#catalog-list li {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+#catalog-list li:hover {
+  transform: translateY(-5px);
+}
+
+#catalog-list h2 {
+  color: #4caf50;
+  margin-top: 0;
+}
+
+#catalog-list p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-button {
+  background: #4caf50;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+  background: #388e3c;
+}
+
+#footer {
+  background: #4caf50;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.list-pages {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.list-pages ul {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.list-pages a,
+.list-pages .page-num-selected {
+  padding: 8px 16px;
+  border-radius: 4px;
+  background: #fff;
+  color: #4caf50;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.list-pages a:hover {
+  background: #4caf50;
+  color: #fff;
+}
+
+.list-pages .page-num-selected {
+  background: #4caf50;
+  color: #fff;
+}
+
+.sort-controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+
+.sort-controls .form-button {
+  flex: 1;
+  max-width: 200px;
+  background: #4caf50;
+  opacity: 0.8;
+}
+
+.sort-controls .form-button.active {
+  opacity: 1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.add-game-form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.add-game-form h2 {
+  color: #4caf50;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+textarea.form-input {
+  resize: vertical;
+  min-height: 100px;
+}
+
+select.form-input {
+  background-color: white;
+}
+
+.form-input.error {
+  border-color: #f44336;
+  background-color: #ffebee;
+}
+
+.form-input.success {
+  border-color: #4caf50;
+  background-color: #e8f5e9;
+}
+
+.error-message {
+  color: #f44336;
+  font-size: 14px;
+  margin-top: 5px;
+  padding: 5px;
+  border-radius: 4px;
+  background-color: #ffebee;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.form-input:focus {
+  border-color: #4caf50;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+}
+
+.form-input.error:focus {
+  border-color: #f44336;
+  box-shadow: 0 0 0 2px rgba(244, 67, 54, 0.2);
+}
